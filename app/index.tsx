@@ -1,8 +1,7 @@
+import React from "react";
 import { Text, View } from "react-native";
 
-export default function Index() {
-  console.log("🔥PitStop è partito!");
-
+export default function Homescreen() {
   return (
     <View
       style={{
@@ -12,11 +11,14 @@ export default function Index() {
         backgroundColor: "#111",
       }}
     >
-      <Text style ={{fontSize:100, color: "white",fontWeight: "bold,"}}>
-        PITSTOP 🚗
-      </Text>
-      <Text style={{ color: "Gray",marginTop: 10}}>
-        La nostra app sta nascendo
+      <Text
+        style={{
+          fontSize: 80,
+          fontWeight: "bold",
+          color: "#fff",
+        }}
+      >
+        PITSTOPPPPP
       </Text>
     </View>
   );
