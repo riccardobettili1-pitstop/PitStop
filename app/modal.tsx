@@ -1,17 +1,17 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from "react-native";
 
-export default function HomeScreen() {
-  const handlePress = () => {
-    Alert.alert("🚀 PitStop", "Hai premuto il bottone!");
+export default function ModalScreen() {
+  const showAlert = () => {
+    Alert.alert("⚠️ Modal", "Questa è una finestra di prova!");
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>PitStop 🚗</Text>
-      <Text style={styles.subtitle}>La tua app di prova</Text>
-      <TouchableOpacity style={styles.button} onPress={handlePress}>
-        <Text style={styles.buttonText}>Premi qui</Text>
+      <Text style={styles.title}>Modal ⚡</Text>
+      <Text style={styles.subtitle}>Prova il bottone qui sotto</Text>
+      <TouchableOpacity style={styles.button} onPress={showAlert}>
+        <Text style={styles.buttonText}>Apri alert</Text>
       </TouchableOpacity>
     </View>
   );
@@ -20,25 +20,24 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "#222",
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
   },
   title: {
-    fontSize: 52,
+    fontSize: 42,
     fontWeight: "bold",
     color: "#fff",
-    textTransform: "uppercase",
     marginBottom: 10,
   },
   subtitle: {
-    fontSize: 24,
+    fontSize: 20,
     color: "#fff",
-    marginBottom: 30,
+    marginBottom: 20,
   },
   button: {
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#FF6347",
     paddingVertical: 12,
     paddingHorizontal: 25,
     borderRadius: 8,
