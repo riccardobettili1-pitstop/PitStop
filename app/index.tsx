@@ -3,7 +3,7 @@ import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function HomeScreen() {
   const handlePress = () => {
-    Alert.alert("🚀 PitGo", "Hai premuto il bottone!");
+    Alert.alert("🚀 PitGo!", "Hai premuto il bottone!");
   };
 
   return (
