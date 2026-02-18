@@ -4,10 +4,15 @@
     "slug": "PitGo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/Pitgo.icon.png",
+    "icon": "./assets/images/ios.png",
     "scheme": "pitstop",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/ios.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.rickabet.PitStop",
@@ -17,39 +22,38 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/images/ios.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/Pitgo.icon.png",
+      "favicon": "./assets/images/ios.png",
       "config": {
-    "pwa": {
-      "icon": "./assets/images/Pitgo.icon.png",
-      "apple": {
-        "mobileWebAppCapable": "yes",
-        "touchIcon": "./assets/images/Pitgo.icon.png",
-        "barStyle": "default"
+        "pwa": {
+          "display": "standalone",
+          "background_color": "#000000",
+          "theme_color": "#000000",
+          "icon": "./assets/images/ios.png",
+          "apple": {
+            "mobileWebAppCapable": "yes",
+            "touchIcon": "./assets/images/ios.png",
+            "barStyle": "black-translucent"
+          }
+        }
       }
-    }}
-  },
+    },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/Pitgo.icon.png",
+          "image": "./assets/images/ios.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "backgroundColor": "#000000"
         }
       ]
     ],
